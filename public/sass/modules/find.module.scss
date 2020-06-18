@@ -1,0 +1,309 @@
+.hr {
+	display: block;
+	margin: 1rem auto;
+	margin-bottom: 2rem;
+}
+
+.pageHeader {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	@media screen and ( min-width: 992px ) {
+		margin-top: 3rem;
+	}
+	h1 {
+		font-size: 40px;
+		@media screen and ( min-width: 1440px ) {
+			font-size: 56px;
+		}
+	}
+}
+
+.errorText {
+	color: red;
+	font-family: 'AvenirLTPro-Black';
+}
+
+.pageContent {
+
+	margin-bottom: 1rem;
+	@media screen and ( min-width: 992px ) {
+		margin-bottom: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.text {
+			flex: 1;
+		}
+		.image {
+			flex: 1.25;
+			img {
+				width: 100%;
+				max-width: 800px;
+			}
+		}
+	}
+}
+
+.searchPanel {
+	.search {
+		display: block;
+		margin-bottom: 1rem;
+		@media screen and ( min-width: 767px ) {
+			display: flex;
+		}
+		.icon {
+			display: none;
+			background: #fff;
+			box-shadow: 30px 30px 80px rgba(55,84,170,0.08);
+			border: 1px solid rgba(152, 152, 153, 0.5);
+			border-right: none;
+			border-radius: 4px;
+			margin-right: -5px;
+			@media screen and ( min-width: 767px ) {
+				display: flex;
+			}
+		}
+		.searchField {
+			border: 1px solid rgba(152, 152, 153, 0.5);
+			margin-bottom: 1rem;
+			@media screen and ( min-width: 767px ) {
+				border-left: none;
+				margin-bottom: 0;
+			}
+			margin-right: 2rem;
+			padding-left: 10px;
+			&:focus {
+				box-shadow: 30px 30px 80px rgba(55,84,170,0.08);
+			}
+		}
+	}
+	.filterButton {
+		margin-right: 2rem;
+		padding: 1rem 2.75rem;
+		border-radius: 4px!important;
+		background: #fff;
+		border: 2px solid #2aabe3;
+		color: #2aabe3;
+		@media screen and ( min-width: 1680px ) {
+			padding: 1rem 4rem;
+			font-size: 24px;
+		}
+		img {
+			vertical-align: text-bottom;
+			margin-right: 10px;
+			@media screen and ( min-width: 1680px ) {
+				vertical-align: baseline;
+			}
+		}
+		.activeFilter {
+			background-color: #eaf7fc;
+			border-radius: 50%;
+			padding-top: 9px;
+			font-size: 16px;
+			width: 32px;
+			height: 32px;
+			display: inline-block;
+			margin-left: 10px;
+			@media screen and ( min-width: 1680px ) {
+				font-size: 16px;
+				padding-top: 10px;
+			}
+
+		}
+	}
+	.searchButton {
+		padding: 1rem 2.75rem;
+		border-radius: 4px!important;
+		@media screen and ( min-width: 1680px ) {
+			padding: 1rem 4rem;
+			font-size: 24px;
+		}
+	}
+}
+
+.orderPanel {
+	margin-top: 2rem;
+
+	label {
+		@media screen and ( min-width: 992px ) {
+			font-size: 18px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 20px;
+		}
+		display: block;
+		@media screen and ( min-width: 767px ) {
+			display: inline;
+		}
+		text-align: left;
+		padding: 1rem;
+		select {
+			display: block;
+			width: 100%;
+			@media screen and ( min-width: 767px ) {
+				display: inline;
+				width: auto;
+				margin-left: 10px;
+			}
+			@media screen and ( min-width: 992px ) {
+				margin-left: 2rem;
+			}
+			padding: 0.5rem 2rem;
+			height: auto;
+			border: 1px solid #fff;
+		}
+	}
+}
+
+.noResults {
+	margin: 3rem 0;
+}
+
+.filterPanel {
+	background: #fbfbff;
+	padding: 2rem;
+
+	header {
+		margin-bottom: 1rem;
+		@media screen and ( min-width: 992px ) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.searchButton {
+		padding: 1rem 4rem;
+	}
+
+	h5 {
+		display: inline;
+		@media screen and ( min-width: 992px ) {
+			font-size: 24px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 30px;
+		}
+	}
+
+	.clearFilters {
+		float: right;
+		display: inline;
+		cursor: pointer;
+		div {
+			img {
+				vertical-align: top;
+			}
+			span {
+				margin-left: 0.5rem;
+				vertical-align: bottom;
+				color: #2aabe3;
+				@media screen and ( min-width: 992px ) {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	.saveSearchButton {
+		background: #fff;
+		color: #2aabe3;
+		padding: 1rem 4rem;
+		margin-right: 2rem;
+		border-radius: 4px!important;
+		@media screen and ( min-width: 1680px ) {
+			padding: 1rem 4rem;
+			font-size: 24px;
+		}
+	}
+
+	.topics {
+		.selectedTopic {
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			color: #2aabe3;
+			position: relative;
+			border-radius: 4px;
+			border: 2px solid #2aabe3;
+			padding: 0.5rem 2rem;
+			display: inline-block;
+			.close {
+				display: inline-block;
+				margin-left: 10px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.tags {
+		.selectedTag {
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			color: #2aabe3;
+			position: relative;
+			border-radius: 4px;
+			border: 2px solid #2aabe3;
+			padding: 0.5rem 2rem;
+	    display: inline-block;
+			.close {
+				display: inline-block;
+				margin-left: 10px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.agencies {
+		.selectedAgency {
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			color: #2aabe3;
+			position: relative;
+			border-radius: 4px;
+			border: 2px solid #2aabe3;
+			padding: 0.5rem 2rem;
+	    display: inline-block;
+			.close {
+				display: inline-block;
+				margin-left: 10px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.dateRow {
+	width: 100%!important;
+	.hiddenLabel {
+		visibility: hidden;
+		font-size: 14px;
+	}
+	.dateBlock {
+		input {
+			cursor: pointer;
+		}
+		position: relative;
+		.cal {
+			position: absolute;
+			right: 15px;
+			top: 20px;
+			cursor: pointer;
+			z-index: 1000;
+		}
+	}
+}
+
+.nav {
+	text-align: center;
+	.button {
+		margin-top: 3rem;
+		padding: 1rem 6rem;
+		@media screen and ( min-width: 992px ) {
+			font-size: 20px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+	}
+}

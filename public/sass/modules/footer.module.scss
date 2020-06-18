@@ -1,0 +1,124 @@
+.footer {
+	text-align: center;
+	@media screen and ( min-width: 640px ) {
+		text-align: left;
+	}
+	background: linear-gradient(264deg, #2aabe3 0%, #2384b3 100%);
+	padding: 50px 0;
+
+	&.fixed {
+		@media screen and ( min-width: 640px ) {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+		}
+	}
+}
+
+.navigationWrap {
+
+	float: left;
+	width: 100%;
+	@media screen and ( min-width: 640px ) {
+		width: auto;
+	}
+	display: inline;
+
+	top: 0;
+	border: none;
+
+	@media screen and ( min-width: 992px ) {
+		position: static;
+		background: none;
+		height: auto;
+		display: block;
+	}
+}
+
+.mainNavigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+
+	li {
+		float: left;
+		position: relative;
+		width: 100%;
+		@media screen and ( min-width: 640px ) {
+			width: auto;
+		}
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	.menu a {
+		display: block;
+		text-decoration: none;
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+		@media screen and ( min-width: 1280px ) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		@media screen and ( min-width: 1280px ) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+		padding-top: 0;
+		padding-bottom: 0;
+		font-weight: 400;
+		color: #ffffff;
+		line-height: 66px;
+		font-size: 16px;
+		opacity: 0.64;
+		@media screen and ( min-width: 1440px ) {
+			font-size: 20px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+	}
+
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a,
+	a:hover,
+	a:focus {
+		color: #f5f5f5;
+	}
+
+}
+
+.logo {
+	float: none;
+	display: block;
+	margin: 0 auto;
+	@media screen and ( min-width: 640px ) {
+		float: left;
+		display: inline;
+		padding-right: 1rem;
+	}
+}
+
+ul.socialMenu {
+	text-align: center;
+	@media screen and ( min-width: 640px ) {
+		text-align: right;
+	}
+	list-style-type: none;
+	margin-top: 18px;
+	li {
+		display: inline;
+		margin: 0 20px;
+	}
+}

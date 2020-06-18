@@ -1,0 +1,55 @@
+.wrap {
+	background: #fff;
+	padding: 1rem;
+	@media screen and ( min-width: 992px ) {
+		padding: 2rem;
+	}
+
+	.menu a {
+		color: #a3a3a4;
+		.menuImage.active {
+			display: none;
+		}
+
+		&.active {
+			color: #1c1c1c;
+			.menuImage {
+				display: none;
+			}
+			.menuImage.active {
+				display: block;
+			}
+		}
+	}
+
+	.menu {
+		li.menuItem {
+			position: relative;
+
+			img {
+				position: absolute;
+				left: 0;
+				top: 11px;
+				@media screen and ( min-width: 1680px ) {
+					top: 15px
+				}
+				vertical-align: top;
+			}
+			span {
+				margin-left: 1rem;
+			}
+			a {
+				font-size: 18px;
+				@media screen and ( min-width: 1680px ) {
+					font-size: 24px;
+				}
+			}
+
+			&.logout {
+				a {
+					color: #ee3b3b;
+				}
+			}
+		}
+	}
+}

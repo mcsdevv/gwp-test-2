@@ -1,0 +1,247 @@
+.actionRow {
+	margin: 30px auto;
+	@media screen and ( min-width: 992px ) {
+		margin: 82px auto;
+	}
+	@media screen and ( min-width: 1440px ) {
+		margin: 100px auto;
+	}
+
+	.columnBlock {
+		margin-bottom: 0;
+		&.find {
+			&:hover {
+				.actionBlock {
+					color: #ffffff;
+					box-shadow: 30px 30px 80px rgba(27, 52, 126, 0.2);
+					//background-image: linear-gradient(253deg, #2aabe3 0%, #2384b3 100%);
+					background-image: url('/images/find-bg.jpg');
+					background-size: cover;
+					background-position: center center;
+					h5,h3 {
+						a {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+
+		&.post {
+			img.blockIcon {
+				width: 50px;
+			}
+			&:hover {
+				.actionBlock {
+					color: #ffffff;
+					box-shadow: 30px 30px 80px rgba(27, 52, 126, 0.2);
+					//background-image: linear-gradient(253deg, #2aabe3 0%, #2384b3 100%);
+					background-image: url('/images/post-bg.jpg');
+					background-size: cover;
+					background-position: center center;
+					h5,h3 {
+						a {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+
+		&.promote {
+			img.blockIcon {
+				width: 80px;
+			}
+			&:hover {
+				.actionBlock {
+					color: #ffffff;
+					box-shadow: 30px 30px 80px rgba(27, 52, 126, 0.2);
+					//background-image: linear-gradient(253deg, #2aabe3 0%, #2384b3 100%);
+					background-image: url('/images/promote-bg.jpg');
+					background-size: cover;
+					background-position: center center;
+					h5,h3 {
+						a {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		.actionBlock {
+			 background: #ffffff;
+			padding: 2rem;
+			border-radius: 5px;
+			box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.04);
+			// @media screen and ( min-width: 992px ) {
+			// 	padding: 2rem;
+			// }
+
+			.linkArrow {
+				margin-left: 5px;
+				vertical-align: baseline;
+			}
+
+			img.blockIcon {
+				margin-bottom: 18px;
+				@media screen and ( min-width: 992px ) {
+					margin-bottom: 36px;
+				}
+			}
+
+			h3 {
+				font-size: 24px;
+				font-family: 'AvenirLTPro-Black';
+				margin-bottom: 16px;
+				@media screen and ( min-width: 992px ) {
+					font-size: 28px;
+					margin-bottom: 32px;
+				}
+				@media screen and ( min-width: 1440px ) {
+					font-size: 32px;
+				}
+				a {
+					color: #1c1c1c;
+				}
+			}
+			p {
+				margin-bottom: 16px;
+				@media screen and ( min-width: 992px ) {
+					margin-bottom: 32px;
+				}
+			}
+			h5 {
+				font-size: 16px;
+				font-family: 'AvenirLTPro-Black';
+				@media screen and ( min-width: 992px ) {
+					font-size: 18px;
+				}
+				a {
+					color: #1c1c1c;
+				}
+			}
+		}
+	}
+}
+
+.infoRow {
+
+	background: #fbfbff;
+	padding-top: 300px;
+	margin-top: -300px;
+	padding-bottom: 4rem;
+
+	&.about {
+		padding-top: 4rem;
+	}
+
+	&.home {
+		background: #fbfbff;
+		padding-top: 300px;
+		margin-top: -300px;
+		padding-bottom: 4rem;
+	}
+
+	.heading {
+		margin-bottom: 0;
+		font-family: 'AvenirLTPro-Black';
+		font-size: 32px;
+		@media screen and ( min-width: 992px ) {
+			font-size: 40px;
+		}
+		@media screen and ( min-width: 1440px ) {
+			font-size: 56px;
+		}
+	}
+	// margin: 30px auto;
+	// @media screen and ( min-width: 992px ) {
+	// 	margin: 82px auto;
+	// }
+	// @media screen and ( min-width: 1440px ) {
+	// 	margin: 100px auto;
+	// }
+	p {
+		@media screen and ( min-width: 992px ) {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+	.hr {
+		display: block;
+		margin: 1rem auto;
+		margin-bottom: 2rem;
+	}
+
+	.catList {
+		margin: 2rem;
+		ul {
+			li {
+				font-size: inherit;
+				display: inline-block;
+				margin-bottom: 1rem;
+			}
+			li:after {
+			content: '\A';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: #2aabe3;
+			display: inline-block;
+			margin: 0 10px;
+			vertical-align: middle;
+			}
+		}
+	}
+}
+
+.featuredContent {
+	background: #ffffff;
+	padding-bottom: 4rem;
+	padding-top: 4rem;
+
+	.button {
+		margin-top: 3rem;
+		padding: 1rem 6rem;
+		@media screen and ( min-width: 992px ) {
+			font-size: 20px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+	}
+
+	.hr {
+		display: block;
+		margin: 1rem auto;
+		margin-bottom: 2rem;
+	}
+
+	.heading {
+		margin-bottom: 30px;
+		@media screen and ( min-width: 992px ) {
+			margin-bottom: 100px;
+		}
+		h2 {
+			@media screen and ( min-width: 1440px ) {
+				font-size: 56px;
+			}
+		}
+	}
+}
+
+.what {
+	h2 {
+		@media screen and ( min-width: 1440px ) {
+			font-size: 56px;
+		}
+	}
+	padding-bottom: 4rem;
+	padding-top: 4rem;
+	.flex {
+		@media screen and ( min-width: 768px ) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.content {
+	width: 100%;
+	background: #fff;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.04);
+	@media screen and ( min-width: 1440px ) {
+		padding: 2.25rem;
+	}
+	img {
+		width: 64px;
+		border-radius: 50%;
+		float: left;
+		margin-right: 1rem;
+		display: none;
+		@media screen and ( min-width: 992px ) {
+			display: block;
+		}
+	}
+
+	h3,span {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-right: 1rem;
+		font-size: 20px;
+		// @media screen and ( min-width: 992px ) {
+		// 	font-size: 24px;
+		// }
+	}
+}

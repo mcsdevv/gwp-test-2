@@ -1,0 +1,37 @@
+.subscribe {
+	background: #ffffff;
+	padding-bottom: 4rem;
+	padding-top: 4rem;
+	&.alt {
+		background: #fbfbff;
+	}
+
+	.button {
+		margin-top: 3rem;
+		padding: 1rem 6rem;
+		@media screen and ( min-width: 992px ) {
+			font-size: 20px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+	}
+
+	.hr {
+		display: block;
+		margin: 1rem auto;
+		margin-bottom: 2rem;
+	}
+
+	.heading {
+		margin-bottom: 30px;
+		@media screen and ( min-width: 992px ) {
+			margin-bottom: 100px;
+		}
+		h2 {
+			@media screen and ( min-width: 1440px ) {
+				font-size: 56px;
+			}
+		}
+	}
+}

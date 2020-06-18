@@ -1,0 +1,1 @@
+.breadcrumbs{margin:2rem;font-size:18px}@media screen and (min-width: 1440px){.breadcrumbs{font-size:24px}}.breadcrumbs ul{margin:0}.breadcrumbs ul li{font-size:inherit;display:inline-block}.breadcrumbs ul li:after{content:'\A';width:5px;height:5px;background:#2aabe3;display:inline-block;margin:0 10px;vertical-align:middle}.breadcrumbs ul li:last-child:after{display:none}

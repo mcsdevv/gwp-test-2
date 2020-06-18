@@ -1,0 +1,202 @@
+.pageContent {
+	.userBlock {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		z-index: 500;
+		.content {
+			background: #ffffff;
+			padding-bottom: 2rem;
+			padding-top: 2rem;
+			@media screen and ( min-width: 992px ) {
+				padding-bottom: 4rem;
+				padding-top: 4rem;
+			}
+
+			.button {
+				margin-top: 3rem;
+				padding: 1rem 6rem;
+				@media screen and ( min-width: 992px ) {
+					font-size: 20px;
+				}
+				@media screen and ( min-width: 1680px ) {
+					font-size: 24px;
+				}
+			}
+
+			.hr {
+				display: block;
+				margin: 1rem auto;
+				margin-bottom: 2rem;
+			}
+
+			.heading {
+				margin-bottom: 30px;
+				@media screen and ( min-width: 992px ) {
+					margin-bottom: 100px;
+				}
+				h2 {
+					@media screen and ( min-width: 1440px ) {
+						font-size: 56px;
+					}
+				}
+			}
+		}
+		.gradient {
+			background: linear-gradient(
+				to top,
+				white,
+				rgba(255, 255, 255, 0)
+			);
+			z-index: 1000;
+			height: 300px;
+			width: 100%;
+		}
+	}
+	.preview {
+		box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.04);
+		border-radius: 4px;
+		background-color: #ffffff;
+		padding: 1rem;
+		@media screen and ( min-width: 992px ) {
+			padding: 2rem;
+		}
+		margin-bottom: 2rem;
+
+		* {
+			font-size: 18px;
+			@media screen and ( min-width: 1680px ) {
+				font-size: 24px;
+			}
+		}
+
+		h1 {
+			font-size: 28px;
+			@media screen and ( min-width: 1440px ) {
+				font-size: 36px;
+			}
+		}
+
+	}
+	.authors {
+		margin: 1.25rem 0;
+		li {
+			font-size: inherit;
+			display: inline-block;
+			font-size: 18px;
+			line-height: 2rem;
+		}
+		li:after {
+			content: '\A';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: #2aabe3;
+			display: inline-block;
+			margin: 0 10px;
+			vertical-align: middle;
+		}
+		li:first-child {
+			margin-right: 1rem;
+		}
+		li:first-child:after {
+			display: none;
+		}
+		li:last-child:after {
+			display: none;
+		}
+		.label {
+			color: #c7c7c8;
+		}
+	}
+
+	.download {
+		box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.04);
+		border-radius: 4px;
+		background-color: #ffffff;
+		padding: 1rem;
+		@media screen and ( min-width: 992px ) {
+			padding: 2.25rem;
+		}
+		.image {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		.like {
+			background: #fff;
+			max-width: 23%;
+			float: right;
+			padding: 1rem;
+			box-shadow: 5px 5px 40px rgba(55, 84, 170, 0.08);
+			img {
+				pointer-events: none;
+			}
+		}
+
+		.downloadButton {
+			font-size: 18px;
+			@media screen and ( min-width: 1680px ) {
+				font-size: 24px;
+			}
+			width: 75%;
+			margin-right: 2%;
+
+			img {
+				pointer-events: none;
+			}
+		}
+
+		.claim {
+			box-shadow: 15px 15px 40px rgba(50, 61, 91, 0.08);
+			background: #fff;
+			color: #2aabe3;
+			width: 100%;
+			text-align: center;
+			font-size: 18px;
+			@media screen and ( min-width: 1680px ) {
+				font-size: 24px;
+			}
+			padding-top: 1.25rem;
+			padding-bottom: 1.25rem;
+		}
+
+		.contact {
+			width: 100%;
+			text-align: center;
+			font-size: 18px;
+			@media screen and ( min-width: 1680px ) {
+				font-size: 24px;
+			}
+			padding-top: 1.25rem;
+			padding-bottom: 1.25rem;
+		}
+
+
+		table.info {
+			a {
+				pointer-events: none;
+			}
+			font-size: 18px;
+			tbody {
+				td {
+					padding: 1rem 0;
+					ul {
+						margin: 0;
+					}
+				}
+				td.label {
+					color: #c7c7c8;
+					padding-right: 5px;
+				}
+				vertical-align: top;
+				border: none;
+				tr:nth-child(even) {
+					background: #fff;
+				}
+			}
+		}
+	}
+}

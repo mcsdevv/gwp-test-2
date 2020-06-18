@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="contact" transform="translate(0 -0.411)">
+    <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(0 0.411)" fill="#fff" stroke="#a3a3a4" stroke-width="1.5">
+      <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+      <circle cx="8.5" cy="8.5" r="7.75" fill="none"/>
+    </g>
+    <text id="_" data-name="?" transform="translate(6 12.411)" fill="#a3a3a4" font-size="10" font-family="SourceSansPro-Bold, Source Sans Pro" font-weight="700"><tspan x="0" y="0">?</tspan></text>
+  </g>
+</svg>

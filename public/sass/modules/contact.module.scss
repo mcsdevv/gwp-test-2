@@ -1,0 +1,33 @@
+.hr {
+	display: block;
+	margin: 1rem auto;
+	margin-bottom: 2rem;
+}
+
+.pageHeader {
+
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	@media screen and ( min-width: 992px ) {
+		margin-top: 3rem;
+	}
+	h1 {
+		font-size: 40px;
+		@media screen and ( min-width: 1440px ) {
+			font-size: 56px;
+		}
+	}
+	p {
+		@media screen and ( min-width: 922px ) {
+			max-width: 692px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.pageContent {
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	width: 100%;
+	max-width: 692px;
+}

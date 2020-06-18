@@ -1,0 +1,67 @@
+.infoRow {
+
+	&.about {
+		padding-top: 4rem;
+	}
+
+	&.home {
+		background: #fbfbff;
+		padding-top: 300px;
+		margin-top: -300px;
+		padding-bottom: 4rem;
+	}
+
+	.heading {
+		margin-bottom: 0;
+		font-family: 'AvenirLTPro-Black';
+		font-size: 32px;
+		@media screen and ( min-width: 992px ) {
+			font-size: 40px;
+		}
+		@media screen and ( min-width: 1440px ) {
+			font-size: 56px;
+		}
+	}
+	// margin: 30px auto;
+	// @media screen and ( min-width: 992px ) {
+	// 	margin: 82px auto;
+	// }
+	// @media screen and ( min-width: 1440px ) {
+	// 	margin: 100px auto;
+	// }
+	p {
+		@media screen and ( min-width: 992px ) {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+	.hr {
+		display: block;
+		margin: 1rem auto;
+		margin-bottom: 2rem;
+	}
+
+	.catList {
+		margin: 2rem;
+		ul {
+			li {
+				font-size: inherit;
+				display: inline-block;
+				margin-bottom: 1rem;
+			}
+			li:after {
+				content: '\A';
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: #2aabe3;
+				display: inline-block;
+				margin: 0 10px;
+				vertical-align: middle;
+			}
+			li:last-child:after {
+				display: none;
+			}
+		}
+	}
+}

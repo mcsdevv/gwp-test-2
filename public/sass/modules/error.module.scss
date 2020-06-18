@@ -1,0 +1,54 @@
+.errorPage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: -100;
+	.inner {
+		-webkit-box-flex: 0;
+		-webkit-flex: none;
+		-ms-flex: none;
+		flex: none;
+		max-width: 50%;
+		h1 {
+			font-size: 32px;
+			@media screen and ( min-width: 992px ) {
+				font-size: 40px;
+			}
+			@media screen and ( min-width: 1440px ) {
+				font-size: 56px;
+			}
+
+			font-family: 'AvenirLTPro-Black';
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 1.5rem;
+		}
+
+		.link {
+			font-family: 'AvenirLTPro-Black';
+		}
+
+		.linkArrow {
+
+		}
+
+		.button {
+			padding: 1rem 4rem;
+			font-family: 'AvenirLTPro-Black';
+			font-size: 18px;
+		}
+		.hr {
+			display: block;
+			margin: 1rem auto;
+			margin-bottom: 1.5rem;
+		}
+	}
+}

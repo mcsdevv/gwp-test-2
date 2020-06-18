@@ -1,0 +1,125 @@
+.bannerWrap {
+	position: relative;
+	// background-image: url('/images/home-banner-small.jpg');
+	// background-size: cover;
+	// background-position: center center;
+	.prev {
+		position: absolute;
+		left: 0;
+		bottom: 10px;
+		padding: 20px;
+		@media screen and ( min-width: 992px ) {
+			top: calc(50% - 34px);
+			bottom: auto;
+		}
+		@media screen and ( min-width: 1360px ) {
+			top: calc(50% - 64px);
+			padding: 50px;
+			bottom: auto;
+		}
+		cursor: pointer;
+		display: inline-block;
+	}
+	.next {
+		cursor: pointer;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		bottom: 10px;
+		padding: 20px;
+		@media screen and ( min-width: 992px ) {
+			top: calc(50% - 34px);
+			bottom: auto;
+		}
+		@media screen and ( min-width: 1360px ) {
+			top: calc(50% - 64px);
+			padding: 50px;
+			bottom: auto;
+		}
+	}
+}
+
+.bannerContent:before {
+	content: " ";
+	background-color: #2aabe3;
+	width: 100%;
+	@media screen and ( min-width: 992px ) {
+		width: 40%;
+	}
+	@media screen and ( min-width: 1140px ) {
+		width: 20%;
+	}
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	opacity: 0.6;
+	z-index: -100;
+}
+
+.bannerContent {
+	padding-top: 150px;
+	padding-bottom: 100px;
+	color: #ffffff;
+	z-index: 200;
+}
+
+.banner {
+	display: none;
+	&.show {
+		display: block;
+	}
+	&.external {
+	}
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	z-index: 100;
+	background-position: center center;
+	background-size: cover;
+	height: 500px;
+	.bannerHeading {
+		font-size: 32px;
+		@media screen and ( min-width: 992px ) {
+			font-size: 40px;
+		}
+		@media screen and ( min-width: 1280px ) {
+			font-size: 60px;
+		}
+		font-family: 'AvenirLTPro-Black';
+		color: #ffffff;
+	}
+
+	.bannerDescription {
+		font-size: 18px;
+		@media screen and ( min-width: 992px ) {
+			font-size: 18px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+		color: #ffffff;
+	}
+
+	.bannerCTA {
+		margin-top: 2rem;
+		font-size: 18px;
+		@media screen and ( min-width: 992px ) {
+			font-size: 18px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+		a {
+			color: #ffffff;
+		}
+
+		font-family: 'AvenirLTPro-Black';
+
+		.linkArrow {
+			margin-left: 5px;
+			vertical-align: baseline;
+		}
+	}
+}

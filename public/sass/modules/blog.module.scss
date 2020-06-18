@@ -1,0 +1,98 @@
+.pageContent {
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	@media screen and ( min-width: 992px ) {
+		margin-bottom: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.text {
+			z-index: 100;
+			flex: 0.75;
+			h1 {
+				font-size: 40px;
+				@media screen and ( min-width: 1440px ) {
+					font-size: 56px;
+				}
+			}
+			p {
+				font-size: 18px;
+				@media screen and ( min-width: 1440px ) {
+					font-size: 24px;
+				}
+			}
+		}
+		.image {
+			flex: 1.25;
+			img {
+				width: 100%;
+				max-width: 900px;
+			}
+		}
+	}
+
+	.search {
+		input {
+			margin: 0;
+		}
+		@media screen and ( min-width: 992px ) {
+			width: 120%;
+		}
+		@media screen and ( min-width: 1680px ) {
+			width: 125%;
+		}
+		.button {
+			padding-left: 1.35rem;
+			padding-right: 1.35rem;
+			@media screen and ( min-width: 1680px ) {
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+				img {
+					width: 28px;
+				}
+			}
+
+			//background: url('/images/right-arrow-white.svg');
+		}
+	}
+}
+
+.blogRow {
+	background: #fbfbff;
+	padding-bottom: 2rem;
+	@media screen and ( min-width: 992px ) {
+		padding-bottom: 4rem;
+	}
+	.heading {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		@media screen and ( min-width: 992px ) {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+		h2 {
+			margin: 0;
+		}
+	}
+}
+
+.clearSearch {
+	font-size: 1rem;
+	vertical-align: middle;
+	color: red;
+	cursor: pointer;
+}
+
+.nav {
+	text-align: center;
+	.button {
+		margin-top: 3rem;
+		padding: 1rem 6rem;
+		@media screen and ( min-width: 992px ) {
+			font-size: 20px;
+		}
+		@media screen and ( min-width: 1680px ) {
+			font-size: 24px;
+		}
+	}
+}

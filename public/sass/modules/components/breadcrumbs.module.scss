@@ -1,0 +1,26 @@
+.breadcrumbs {
+	margin: 2rem;
+	font-size: 18px;
+	@media screen and ( min-width: 1440px ) {
+		font-size: 24px;
+	}
+	ul {
+		margin: 0;
+		li {
+			font-size: inherit;
+			display: inline-block;
+		}
+		li:after {
+			content: '\A';
+			width: 5px;
+			height: 5px;
+			background: #2aabe3;
+			display: inline-block;
+			margin: 0 10px;
+			vertical-align: middle;
+		}
+		li:last-child:after {
+			display: none;
+		}
+	}
+}
